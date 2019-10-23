@@ -1,7 +1,7 @@
 # KotlinExercises
 Ejercicios de Kotlin
 ## 1º BLOQUE.
-
+---
 
 ### Actividad 1
 Escriba un método que imprima la representación de su parámetro entero en números romanos. Por ejemplo, si el parámetro es 1998, la salida debe ser MCMXCVIII
@@ -63,7 +63,7 @@ Estructura la aplicación 8 a un patrón MVC(Modelo Vista Controlador) estructur
 
 ## 2º BLOQUE.
 **Todas las actividades a continuación se desarrollarán con el patrón MVC y separando en sus distintos "packages"**
-
+---
 ### Actividad 1
 Cree una clase Cuenta que almacena el saldo actual y proporciona los métodos getBalance para obtener el saldo y deposit para depositar fondos, withdrar para reitrar fondos y toString para devolver por pantalla el saldo actual, además de al menos un constructor. Escriba y pruebe la clase.
 
@@ -155,3 +155,52 @@ Asigna a cada posición un objto de las clases anteriores con los valores qu des
 Ahora recorre este array y ejecuta el método precioFinal()
 Deberás mostrar el precio de cada clase, es decir, el precio de todas las operaciones de todas las televisiones por un lado, el de las lavadoras por otro y la suma de los Electrodomesticos(puedes crear objetos Electrodomestico, pero recuerda que Televisión y Lavadora también son electrodomésticos). Recuerda el uso operador instanceof.
 Crea la clase prueba donde lanzemos test de cada clase y método creado. Fucinomanento: Por ejmplo, si tenemos un Electrodoméstico on un precio final de 300, una lavadora de 200 y una televisión de 500, el resultado final será 1000 (300+200+500) 300 para electrodomésticos, 200 para lavadoras y 500 para televisión.
+
+## 3º BLOQUE.
+---
+
+### Actividad 1
+
+Se tiene la declaración del siguiente data class:
+```
+data class Articulo(val codigo: Int, val descripcion: String, var precio: Float)
+```
+Definir un Array con 4 elmentos de tipo Articulo.
+Implementar dos funciones, una que le enviemos el Array y nos muestre todos sus componentes, y otra que también reciba el Array de artículos y proceda a aumentar en 10% a todos los productos.
+
+### Actividad 2
+
+Declarar una clase Dado que tenga como propiedad su valor y dos métodos que permitan tirar el dado e imprimir su valor.
+En la main definir un Array con 5 objetos de tipo Dado.
+Tirar los 5 dados e imprimir los valores de cada uno.
+
+### Actividad 3
+
+Crear una lista inmutable de 100 elementos enteros con valores aleatorios comprendidos entre 0 y 20.
+contar cuantos hay comprendidos entre 1 y 4, 5 y 8 y cuantos entre 10 y 13.
+Imprimir si el valor 20 está presente en la lista.
+
+### Actividad 4
+
+Confeccionar una clase que represente un Empleado. Definir como propiedades su nombre y su sueldo.
+Definir una lista mutable con tres empleados.
+Imprimir los datos de los empleados.
+Calcular cuanto gasta la empresa en sueldos.
+Agregar un nuevo empleado a la lista y calcular nuevamente el gasto en sueldos.
+
+### Actividad 5
+
+Cargar por teclado y almacenar en una lista inmutable las alturas de 5 personas (valores Float)
+Obtener el promedio de las mismas. Contar cuántas personas son más altas que el promedio y cuántas más bajas
+
+### Actividad 6
+
+Confeccionar una agenda. Utilizar un MutableMap cuya clave sea de la clase Fecha:
+```
+data class Fecha(val dia: Int, val mes: Int, val año: Int)
+```
+Como valor en el mapa almacenar un String.
+Implementar las siguientes funciones:
+1) Carga de datos en la agenda.
+2) Listado completo de la agenda.
+3) Consulta de una fecha.
